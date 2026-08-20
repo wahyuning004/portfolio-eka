@@ -1,2 +1,1 @@
-<?php
-// Reverted back to Laravel
+// Removed
