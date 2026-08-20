@@ -1,5 +1,8 @@
 <?php
 
+use Illuminate\Foundation\Application;
+use Illuminate\Http\Request;
+
 // Prepare writable directories in /tmp for Vercel serverless environment
 $tmpDirectories = [
     '/tmp/storage/framework/views',
@@ -19,7 +22,7 @@ foreach ($tmpDirectories as $dir) {
 $envVars = [
     'APP_ENV' => 'production',
     'APP_KEY' => 'base64:6kYV90vXwYy6zG1E8a4xQ2uN9mP8kL7jH5gF3dS1aA0=',
-    'APP_DEBUG' => 'false',
+    'APP_DEBUG' => 'true',
     'DB_CONNECTION' => 'sqlite',
     'DB_DATABASE' => ':memory:',
     'CACHE_STORE' => 'array',
@@ -39,5 +42,14 @@ foreach ($envVars as $key => $val) {
     $_SERVER[$key] = $val;
 }
 
-require __DIR__ . '/../public/index.php';
+define('LARAVEL_START', microtime(true));
+
+require __DIR__ . '/../vendor/autoload.php';
+
+/** @var Application $app */
+$app = require_once __DIR__ . '/../bootstrap/app.php';
+
+$app->useStoragePath('/tmp/storage');
+
+$app->handleRequest(Request::capture());
 
