@@ -25,10 +25,18 @@ foreach ($tmpDirectories as $dir) {
 $envVars = [
     'APP_ENV' => 'production',
     'APP_KEY' => 'base64:6kYV90vXwYy6zG1E8a4xQ2uN9mP8kL7jH5gF3dS1aA0=',
-    'APP_DEBUG' => 'false',
+    'APP_DEBUG' => 'true',
     'DB_CONNECTION' => 'sqlite',
     'DB_DATABASE' => ':memory:',
     'VIEW_COMPILED_PATH' => '/tmp/storage/framework/views',
+    'APP_SERVICES_CACHE' => '/tmp/storage/bootstrap/cache/services.php',
+    'APP_PACKAGES_CACHE' => '/tmp/storage/bootstrap/cache/packages.php',
+    'APP_CONFIG_CACHE' => '/tmp/storage/bootstrap/cache/config.php',
+    'APP_ROUTES_CACHE' => '/tmp/storage/bootstrap/cache/routes.php',
+    'APP_EVENTS_CACHE' => '/tmp/storage/bootstrap/cache/events.php',
+    'SESSION_DRIVER' => 'cookie',
+    'CACHE_STORE' => 'array',
+    'LOG_CHANNEL' => 'errorlog',
 ];
 
 foreach ($envVars as $key => $val) {
