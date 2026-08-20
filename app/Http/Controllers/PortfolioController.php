@@ -476,36 +476,8 @@ class PortfolioController extends Controller
      */
     private function ensurePublicAssetsExist()
     {
-        $krlBannerBrain = 'C:\\Users\\Advan\\.gemini\\antigravity\\brain\\35d7d16f-15a2-4d0d-b404-8bfe5ce0dd3e\\media__1787192878030.jpg';
-        $publicImgDir = public_path('images');
-
-        if (File::exists($krlBannerBrain)) {
-            File::copy($krlBannerBrain, $publicImgDir . '/proj-krl-copilot.jpg');
-            File::copy($krlBannerBrain, $publicImgDir . '/proj-krl-copilot.png');
-        }
-
-        $tempScripts = [
-            public_path('clean_all.php'),
-            public_path('copy_academic_certs_v10.php'),
-            public_path('copy_champ_certs.php'),
-            public_path('copy_real_images.php'),
-            public_path('find_cert_images.php'),
-            public_path('find_new_certs.php'),
-            public_path('find_new_certs_2.php'),
-            public_path('find_new_certs_3.php'),
-            public_path('find_new_certs_4.php'),
-            database_path('migrations/0001_01_01_000000_create_users_table.php'),
-            database_path('migrations/0001_01_01_000001_create_cache_table.php'),
-            database_path('migrations/0001_01_01_000002_create_jobs_table.php'),
-            database_path('migrations/2026_08_15_000001_create_projects_table.php'),
-            database_path('migrations/2026_08_15_000002_create_achievements_table.php'),
-            database_path('migrations/2026_08_15_000003_create_certificates_table.php'),
-        ];
-
-        foreach ($tempScripts as $script) {
-            if (File::exists($script)) {
-                File::delete($script);
-            }
-        }
+        // On serverless environments like Vercel, the filesystem is read-only.
+        // Skipping file copy/delete operations prevents HTTP 500 runtime errors.
+        return;
     }
 }

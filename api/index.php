@@ -6,6 +6,7 @@ $tmpDirectories = [
     '/tmp/storage/framework/cache',
     '/tmp/storage/framework/sessions',
     '/tmp/storage/logs',
+    '/tmp/storage/bootstrap/cache',
 ];
 
 foreach ($tmpDirectories as $dir) {
@@ -14,14 +15,24 @@ foreach ($tmpDirectories as $dir) {
     }
 }
 
-$_ENV['APP_ENV'] = $_ENV['APP_ENV'] ?? 'production';
-$_ENV['APP_KEY'] = $_ENV['APP_KEY'] ?? 'base64:6kYV90vXwYy6zG1E8a4xQ2uN9mP8kL7jH5gF3dS1aA0=';
-$_ENV['APP_DEBUG'] = 'false';
-$_ENV['DB_CONNECTION'] = 'sqlite';
-$_ENV['DB_DATABASE'] = ':memory:';
-$_ENV['CACHE_STORE'] = 'array';
-$_ENV['SESSION_DRIVER'] = 'cookie';
-$_ENV['LOG_CHANNEL'] = 'stderr';
-$_ENV['VIEW_COMPILED_PATH'] = '/tmp/storage/framework/views';
+// Global environment overrides for Vercel serverless runtime
+$envVars = [
+    'APP_ENV' => 'production',
+    'APP_KEY' => 'base64:6kYV90vXwYy6zG1E8a4xQ2uN9mP8kL7jH5gF3dS1aA0=',
+    'APP_DEBUG' => 'false',
+    'DB_CONNECTION' => 'sqlite',
+    'DB_DATABASE' => ':memory:',
+    'CACHE_STORE' => 'array',
+    'SESSION_DRIVER' => 'cookie',
+    'LOG_CHANNEL' => 'stderr',
+    'VIEW_COMPILED_PATH' => '/tmp/storage/framework/views',
+];
+
+foreach ($envVars as $key => $val) {
+    putenv("{$key}={$val}");
+    $_ENV[$key] = $val;
+    $_SERVER[$key] = $val;
+}
 
 require __DIR__ . '/../public/index.php';
+
