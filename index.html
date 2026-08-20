@@ -61,9 +61,9 @@
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .glass-card-hover:hover {
-            transform: translateY(-4px);
+            transform: translateY(-5px);
             border-color: rgba(244, 114, 182, 0.4);
-            box-shadow: 0 20px 40px -15px rgba(244, 114, 182, 0.25);
+            box-shadow: 0 20px 40px -15px rgba(244, 114, 182, 0.3);
         }
         .glass-nav {
             background: rgba(18, 12, 18, 0.90);
@@ -128,7 +128,7 @@
                         </div>
                     </a>
 
-                    <!-- Desktop Navigation Links (Large Screens) -->
+                    <!-- Desktop Navigation Links -->
                     <nav class="hidden lg:flex items-center gap-1 bg-rose-950/40 p-1.5 rounded-full border border-pink-500/20 backdrop-blur-md">
                         <a href="#hero" class="px-4 py-2 text-xs font-semibold text-slate-200 hover:text-pink-300 rounded-full hover:bg-pink-500/10 transition-all">Beranda</a>
                         <a href="#about" class="px-4 py-2 text-xs font-semibold text-slate-200 hover:text-pink-300 rounded-full hover:bg-pink-500/10 transition-all">Tentang Saya</a>
@@ -138,7 +138,7 @@
                         <a href="#contact" class="px-4 py-2 text-xs font-semibold text-slate-200 hover:text-pink-300 rounded-full hover:bg-pink-500/10 transition-all">Kontak</a>
                     </nav>
 
-                    <!-- Header Actions (Large Screens) -->
+                    <!-- Header Actions -->
                     <div class="hidden lg:flex items-center gap-3">
                         <a href="/cv/CV_Eka_Wahyuning_Tiyasa.pdf" download class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-bold text-white bg-gradient-to-r from-pink-500 via-rose-400 to-pink-600 hover:from-pink-400 hover:to-rose-500 shadow-md shadow-pink-500/25 hover:shadow-pink-500/40 transition-all duration-300 hover:-translate-y-0.5">
                             <i class="fa-solid fa-download"></i> Unduh CV PDF
@@ -158,9 +158,6 @@
                      x-transition:enter="transition ease-out duration-200"
                      x-transition:enter-start="opacity-0 -translate-y-4"
                      x-transition:enter-end="opacity-100 translate-y-0"
-                     x-transition:leave="transition ease-in duration-150"
-                     x-transition:leave-start="opacity-100 translate-y-0"
-                     x-transition:leave-end="opacity-0 -translate-y-4"
                      class="lg:hidden mt-3 p-4 glass-card rounded-2xl border border-pink-500/30 shadow-2xl flex flex-col gap-2 bg-[#170E17]/95 backdrop-blur-xl">
                     <a @click="mobileMenuOpen = false" href="#hero" class="px-4 py-2.5 text-sm font-medium text-slate-200 hover:text-pink-300 hover:bg-pink-500/10 rounded-xl flex items-center justify-between">
                         <span>Beranda</span>
@@ -202,7 +199,6 @@
                     
                     <!-- Hero Content Left -->
                     <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                        <!-- Status Badges -->
                         <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
                             <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-extrabold bg-pink-500/20 text-pink-300 border border-pink-500/40 uppercase tracking-wider backdrop-blur-sm">
                                 <span class="w-2 h-2 rounded-full bg-pink-400 animate-ping"></span>
@@ -221,17 +217,14 @@
                             </span>
                         </div>
 
-                        <!-- Main Heading -->
                         <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
                             Full-Stack Web Developer & <span class="text-gradient-pink">Atlet Silat Nasional</span>
                         </h1>
 
-                        <!-- Subtitle Bio -->
                         <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
                             Saya mengembangkan sistem informasi & aplikasi web modern berbasis Laravel dengan presisi tinggi. Memiliki rekam jejak akademik S1 IT UNPAM, Pemegang Hak Cipta (HKI) Kemenkumham RI, Penulis 2 Jurnal Ilmiah, serta ketahanan disiplin peraih juara kejuaraan silat nasional.
                         </p>
 
-                        <!-- Action Buttons & Socials -->
                         <div class="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-3">
                             <a href="#projects" class="px-7 py-3.5 rounded-full text-sm font-bold text-white bg-gradient-to-r from-pink-500 via-rose-400 to-pink-600 hover:from-pink-400 hover:to-rose-500 shadow-xl shadow-pink-500/25 hover:shadow-pink-500/40 transition-all duration-300 hover:-translate-y-1 flex items-center gap-2">
                                 <i class="fa-solid fa-code"></i> Lihat Proyek Web
@@ -255,7 +248,6 @@
                             </div>
                         </div>
 
-                        <!-- Highlights Micro Stats -->
                         <div class="pt-8 grid grid-cols-3 gap-4 border-t border-pink-500/20">
                             <div>
                                 <div class="text-2xl sm:text-3xl font-extrabold text-pink-400">S1 IT UNPAM</div>
@@ -272,14 +264,12 @@
                         </div>
                     </div>
 
-                    <!-- Hero Card Right (Formal Portrait Photo & Credentials Badges) -->
+                    <!-- Hero Card Right -->
                     <div class="lg:col-span-5 relative flex justify-center">
                         <div class="relative w-full max-w-md">
-                            <!-- Background Soft Pink Glow -->
                             <div class="absolute -inset-1.5 bg-gradient-to-r from-pink-500 via-rose-400 to-amber-400 rounded-3xl blur-xl opacity-35 animate-pulse"></div>
                             
                             <div class="relative glass-card rounded-3xl p-6 border border-pink-500/30 shadow-2xl overflow-hidden">
-                                <!-- Top Bar Badge -->
                                 <div class="flex items-center justify-between pb-4 border-b border-pink-500/20">
                                     <div class="flex items-center gap-2">
                                         <span class="w-3 h-3 rounded-full bg-pink-500"></span>
@@ -291,12 +281,10 @@
                                     </span>
                                 </div>
 
-                                <!-- Image Container -->
                                 <div class="mt-4 relative rounded-2xl overflow-hidden border border-pink-500/30 group">
                                     <img src="/images/profile-eka.jpg" 
                                          alt="Eka Wahyuning Tiyasa" 
-                                         class="w-full h-[360px] object-cover object-[center_10%] transform transition-transform duration-500 group-hover:scale-105"
-                                         onerror="this.src='/images/profile-eka.png'">
+                                         class="w-full h-[360px] object-cover object-[center_10%] transform transition-transform duration-500 group-hover:scale-105">
                                 </div>
 
                                 <div class="mt-4 p-3.5 rounded-2xl bg-rose-950/40 border border-pink-500/20 text-left space-y-1">
@@ -309,27 +297,26 @@
                                     <p class="text-xs text-pink-200/80">S1 Teknik Informatika UNPAM • Alumni MAN 4 Bekasi</p>
                                 </div>
 
-                                <!-- Floating Interactive Badges -->
                                 <div class="mt-5 space-y-3">
-                                    <div class="flex items-center gap-3 p-3 rounded-xl bg-rose-950/60 border border-pink-500/20 hover:border-pink-400/50 transition-colors">
+                                    <a href="https://drive.google.com/file/d/1D9xlbf39uqBwekQ5-0dV0DxG4efX-o6b/view?usp=drivesdk" target="_blank" class="flex items-center gap-3 p-3 rounded-xl bg-rose-950/60 border border-pink-500/20 hover:border-pink-400/50 transition-colors group">
                                         <div class="w-10 h-10 rounded-lg bg-sky-500/20 text-sky-300 flex items-center justify-center shrink-0">
                                             <i class="fa-solid fa-file-contract text-lg"></i>
                                         </div>
-                                        <div class="text-left text-xs">
-                                            <span class="font-semibold text-white block">Hak Cipta (HKI) Kemenkumham RI</span>
+                                        <div class="text-left text-xs flex-1">
+                                            <span class="font-semibold text-white block group-hover:text-pink-300">Hak Cipta (HKI) Kemenkumham RI <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px]"></i></span>
                                             <span class="text-slate-400">EC002026090327 • Y2O Water Solution</span>
                                         </div>
-                                    </div>
+                                    </a>
 
-                                    <div class="flex items-center gap-3 p-3 rounded-xl bg-rose-950/60 border border-pink-500/20 hover:border-pink-400/50 transition-colors">
+                                    <a href="https://jurnalmahasiswa.com/index.php/jriin/article/view/3928" target="_blank" class="flex items-center gap-3 p-3 rounded-xl bg-rose-950/60 border border-pink-500/20 hover:border-pink-400/50 transition-colors group">
                                         <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-300 flex items-center justify-center shrink-0">
                                             <i class="fa-solid fa-book-bookmark text-lg"></i>
                                         </div>
-                                        <div class="text-left text-xs">
-                                            <span class="font-semibold text-white block">Penulis Jurnal Ilmiah (JRIIN & APPA)</span>
+                                        <div class="text-left text-xs flex-1">
+                                            <span class="font-semibold text-white block group-hover:text-emerald-300">Penulis Jurnal Ilmiah (JRIIN & APPA) <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px]"></i></span>
                                             <span class="text-slate-400">SDN Bantarkambing 03 & SMPN 2 Kemang</span>
                                         </div>
-                                    </div>
+                                    </a>
 
                                     <div class="flex items-center gap-3 p-3 rounded-xl bg-rose-950/60 border border-pink-500/20 hover:border-pink-400/50 transition-colors">
                                         <div class="w-10 h-10 rounded-lg bg-amber-500/20 text-amber-300 flex items-center justify-center shrink-0">
@@ -352,8 +339,6 @@
         <!-- ABOUT ME SECTION -->
         <section id="about" class="py-20 relative bg-rose-950/20 border-y border-pink-500/20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                
-                <!-- Section Header -->
                 <div class="text-center max-w-3xl mx-auto space-y-3">
                     <span class="text-xs font-extrabold uppercase tracking-widest text-pink-400">Filosofi, Rekam Pendidikan & Profil</span>
                     <h2 class="text-3xl sm:text-4xl font-bold text-white">Tentang Eka Wahyuning Tiyasa</h2>
@@ -363,8 +348,6 @@
                 </div>
 
                 <div class="mt-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                    
-                    <!-- Bio Description Card & Education History -->
                     <div class="lg:col-span-7 space-y-6">
                         <div class="glass-card p-8 rounded-3xl border border-pink-500/20 space-y-6">
                             <div>
@@ -377,12 +360,9 @@
                                 </p>
                             </div>
 
-                            <!-- Education History Timeline -->
                             <div class="pt-4 border-t border-pink-500/20 space-y-4">
                                 <h4 class="text-xs font-extrabold uppercase tracking-wider text-pink-300">Riwayat Pendidikan Formal</h4>
-                                
                                 <div class="relative pl-6 border-l-2 border-pink-500/40 space-y-4">
-                                    <!-- UNPAM -->
                                     <div class="relative">
                                         <span class="absolute -left-[31px] top-1.5 w-3 h-3 rounded-full bg-pink-500 ring-4 ring-pink-500/20"></span>
                                         <div class="flex items-center justify-between">
@@ -393,14 +373,7 @@
                                         <p class="text-xs text-slate-300 mt-1 leading-relaxed">
                                             Fokus pada Rekayasa Perangkat Lunak, Web Development (Laravel), Database Architecture (MySQL & PostgreSQL), RESTful API, Penulis Jurnal Ilmiah (JRIIN & APPA) & Pemegang Hak Cipta (HKI) Kemenkumham RI.
                                         </p>
-                                        <div class="flex items-center gap-2 mt-1.5">
-                                            <span class="px-3 py-1 rounded-lg text-xs font-bold bg-pink-500/20 text-pink-300 border border-pink-500/30">
-                                                <i class="fa-solid fa-graduation-cap text-pink-400 mr-1"></i> Mahasiswa Aktif Semester 7
-                                            </span>
-                                        </div>
                                     </div>
-
-                                    <!-- MAN 4 BEKASI -->
                                     <div class="relative pt-2">
                                         <span class="absolute -left-[31px] top-3.5 w-3 h-3 rounded-full bg-rose-400 ring-4 ring-rose-400/20"></span>
                                         <div class="flex items-center justify-between">
@@ -416,54 +389,15 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                            <!-- Silat & Discipline -->
-                            <div class="pt-4 border-t border-pink-500/20">
-                                <h3 class="text-xl font-bold text-pink-300 flex items-center gap-3">
-                                    <i class="fa-solid fa-shield-halved text-amber-400"></i>
-                                    Kedisiplinan & Daya Juang Pencak Silat
-                                </h3>
-                                <p class="text-slate-300 text-sm sm:text-base leading-relaxed mt-2">
-                                    Pengalaman sebagai Atlet peraih Juara 1 & 2 Tingkat Nasional serta peran sebagai Official Kontingen SHT Kota Bekasi Pusat Madiun pada <strong class="text-white">CNN Indonesia Piala Presiden 2026</strong> dan Coach pada <strong class="text-white">Kemenpora International Championship 2025</strong> membentuk mentalitas yang sangat tangguh, disiplin, dan teliti dalam eksekusi proyek software.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- USP Cards Grid -->
-                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                            <div class="glass-card p-5 rounded-2xl border border-pink-500/20 hover:border-pink-400/50 transition-all">
-                                <div class="w-9 h-9 rounded-lg bg-pink-500/20 text-pink-300 flex items-center justify-center font-bold mb-3">
-                                    <i class="fa-solid fa-check"></i>
-                                </div>
-                                <h4 class="font-bold text-white text-sm mb-1">Presisi Laravel 11</h4>
-                                <p class="text-xs text-slate-400 leading-relaxed">Pengembangan fitur backend & arsitektur REST API dengan pola MVC bersih dan efisien.</p>
-                            </div>
-                            <div class="glass-card p-5 rounded-2xl border border-pink-500/20 hover:border-pink-400/50 transition-all">
-                                <div class="w-9 h-9 rounded-lg bg-pink-500/20 text-pink-300 flex items-center justify-center font-bold mb-3">
-                                    <i class="fa-solid fa-check"></i>
-                                </div>
-                                <h4 class="font-bold text-white text-sm mb-1">Integritas Akademik & HKI</h4>
-                                <p class="text-xs text-slate-400 leading-relaxed">Memiliki Hak Kekayaan Intelektual resmi Kemenkumham RI dan 2 publikasi jurnal ilmiah terakreditasi.</p>
-                            </div>
-                            <div class="glass-card p-5 rounded-2xl border border-pink-500/20 hover:border-pink-400/50 transition-all">
-                                <div class="w-9 h-9 rounded-lg bg-pink-500/20 text-pink-300 flex items-center justify-center font-bold mb-3">
-                                    <i class="fa-solid fa-check"></i>
-                                </div>
-                                <h4 class="font-bold text-white text-sm mb-1">Ketahanan Disiplin Atlet</h4>
-                                <p class="text-xs text-slate-400 leading-relaxed">Mentalitas juara nasional yang pantang menyerah dalam menghadapi tantangan teknis kompleks.</p>
-                            </div>
                         </div>
                     </div>
 
-                    <!-- Skills & Tech Stack Grid -->
                     <div class="lg:col-span-5 space-y-6">
                         <div class="glass-card p-8 rounded-3xl border border-pink-500/20 space-y-6">
                             <h3 class="text-xl font-bold text-white flex items-center gap-3">
                                 <i class="fa-solid fa-layer-group text-pink-400"></i>
                                 Keahlian Teknis & Pemrograman
                             </h3>
-
-                            <!-- Tech Stack Progress Items -->
                             <div class="space-y-4">
                                 <div>
                                     <div class="flex justify-between text-xs font-semibold mb-1.5">
@@ -474,7 +408,6 @@
                                         <div class="h-full bg-gradient-to-r from-pink-500 to-rose-400 rounded-full" style="width: 90%"></div>
                                     </div>
                                 </div>
-
                                 <div>
                                     <div class="flex justify-between text-xs font-semibold mb-1.5">
                                         <span class="text-slate-200">Tailwind CSS & Blade UI</span>
@@ -484,7 +417,6 @@
                                         <div class="h-full bg-gradient-to-r from-pink-500 to-rose-400 rounded-full" style="width: 92%"></div>
                                     </div>
                                 </div>
-
                                 <div>
                                     <div class="flex justify-between text-xs font-semibold mb-1.5">
                                         <span class="text-slate-200">MySQL & PostgreSQL Database</span>
@@ -494,32 +426,9 @@
                                         <div class="h-full bg-gradient-to-r from-pink-500 to-rose-400 rounded-full" style="width: 85%"></div>
                                     </div>
                                 </div>
-
-                                <div>
-                                    <div class="flex justify-between text-xs font-semibold mb-1.5">
-                                        <span class="text-slate-200">RESTful API Integration</span>
-                                        <span class="text-pink-400">88%</span>
-                                    </div>
-                                    <div class="w-full h-2 rounded-full bg-rose-950/80 overflow-hidden">
-                                        <div class="h-full bg-gradient-to-r from-pink-500 to-rose-400 rounded-full" style="width: 88%"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Tech Stack Pills -->
-                            <div class="pt-4 border-t border-pink-500/20">
-                                <span class="text-xs font-semibold text-pink-300/80 block mb-3">Tools & Environment:</span>
-                                <div class="flex flex-wrap gap-2">
-                                    <span class="px-3 py-1 rounded-lg text-xs bg-rose-950/80 text-pink-200 border border-pink-500/30">Git & GitHub</span>
-                                    <span class="px-3 py-1 rounded-lg text-xs bg-rose-950/80 text-pink-200 border border-pink-500/30">Alpine.js</span>
-                                    <span class="px-3 py-1 rounded-lg text-xs bg-rose-950/80 text-pink-200 border border-pink-500/30">Laragon</span>
-                                    <span class="px-3 py-1 rounded-lg text-xs bg-rose-950/80 text-pink-200 border border-pink-500/30">Bootstrap 5</span>
-                                    <span class="px-3 py-1 rounded-lg text-xs bg-rose-950/80 text-pink-200 border border-pink-500/30">Postman</span>
-                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -527,8 +436,6 @@
         <!-- PROJECTS SHOWCASE SECTION -->
         <section id="projects" class="py-24 relative">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                
-                <!-- Section Header -->
                 <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
                     <div class="space-y-3">
                         <span class="text-xs font-extrabold uppercase tracking-widest text-pink-400">Showcase Karya</span>
@@ -538,146 +445,150 @@
                         </p>
                     </div>
 
-                    <!-- Category Filter Tabs -->
                     <div class="flex flex-wrap gap-2 bg-rose-950/60 p-1.5 rounded-2xl border border-pink-500/20">
-                        <button @click="activeTab = 'all'" 
-                                :class="activeTab === 'all' ? 'bg-pink-500 text-white font-bold shadow-md shadow-pink-500/30' : 'text-slate-300 hover:text-white'"
-                                class="px-4 py-2 rounded-xl text-xs transition-all">
-                            Semua Proyek
-                        </button>
-                        <button @click="activeTab = 'fullstack'" 
-                                :class="activeTab === 'fullstack' ? 'bg-pink-500 text-white font-bold shadow-md shadow-pink-500/30' : 'text-slate-300 hover:text-white'"
-                                class="px-4 py-2 rounded-xl text-xs transition-all">
-                            Laravel & Enterprise
-                        </button>
-                        <button @click="activeTab = 'mobile'" 
-                                :class="activeTab === 'mobile' ? 'bg-pink-500 text-white font-bold shadow-md shadow-pink-500/30' : 'text-slate-300 hover:text-white'"
-                                class="px-4 py-2 rounded-xl text-xs transition-all">
-                            Aplikasi Mobile
-                        </button>
-                        <button @click="activeTab = 'silat'" 
-                                :class="activeTab === 'silat' ? 'bg-pink-500 text-white font-bold shadow-md shadow-pink-500/30' : 'text-slate-300 hover:text-white'"
-                                class="px-4 py-2 rounded-xl text-xs transition-all">
-                            Sistem Pencak Silat
-                        </button>
+                        <button @click="activeTab = 'all'" :class="activeTab === 'all' ? 'bg-pink-500 text-white font-bold shadow-md' : 'text-slate-300 hover:text-white'" class="px-4 py-2 rounded-xl text-xs transition-all">Semua Proyek</button>
+                        <button @click="activeTab = 'fullstack'" :class="activeTab === 'fullstack' ? 'bg-pink-500 text-white font-bold shadow-md' : 'text-slate-300 hover:text-white'" class="px-4 py-2 rounded-xl text-xs transition-all">Laravel & Enterprise</button>
+                        <button @click="activeTab = 'mobile'" :class="activeTab === 'mobile' ? 'bg-pink-500 text-white font-bold shadow-md' : 'text-slate-300 hover:text-white'" class="px-4 py-2 rounded-xl text-xs transition-all">Aplikasi Mobile</button>
+                        <button @click="activeTab = 'silat'" :class="activeTab === 'silat' ? 'bg-pink-500 text-white font-bold shadow-md' : 'text-slate-300 hover:text-white'" class="px-4 py-2 rounded-xl text-xs transition-all">Sistem Pencak Silat</button>
                     </div>
                 </div>
 
-                <!-- Projects Cards Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Project 1: PSHT Rayon Segarajaya -->
-                    <div x-show="activeTab === 'all' || activeTab === 'silat'"
-                         class="glass-card rounded-3xl overflow-hidden border border-pink-500/20 glass-card-hover flex flex-col group">
+                    
+                    <!-- Proyek 1: PSHT Rayon Segarajaya Web Portal -->
+                    <div x-show="activeTab === 'all' || activeTab === 'silat'" class="glass-card rounded-3xl overflow-hidden border border-pink-500/20 glass-card-hover flex flex-col group">
                         <div class="relative h-52 overflow-hidden bg-rose-950 border-b border-pink-500/20">
-                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop" 
-                                 alt="PSHT Rayon Segarajaya Web Portal" 
-                                 class="w-full h-full object-cover object-top transform transition-transform duration-500 group-hover:scale-110">
+                            <img src="/images/proj-psht-segarajaya.png" alt="PSHT Rayon Segarajaya Web Portal" class="w-full h-full object-cover object-top transform transition-transform duration-500 group-hover:scale-110">
                             <div class="absolute inset-0 bg-rose-950/40 group-hover:bg-rose-950/20 transition-colors"></div>
-                            <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-rose-950/90 text-pink-300 border border-pink-500/30 backdrop-blur-md">
-                                Sistem Pencak Silat
-                            </span>
+                            <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[10px] font-bold uppercase bg-rose-950/90 text-pink-300 border border-pink-500/30">Laravel & Silat System</span>
                         </div>
                         <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
                             <div class="space-y-2">
-                                <h3 class="text-xl font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-1">
-                                    PSHT Rayon Segarajaya Web Portal
-                                </h3>
-                                <p class="text-slate-300 text-xs sm:text-sm line-clamp-2 leading-relaxed">
-                                    Portal web resmi PSHT Rayon Segarajaya untuk pendaftaran anggota, galeri kejuaraan, jadwal latihan, dan sertifikasi atlet.
-                                </p>
+                                <h3 class="text-xl font-bold text-white group-hover:text-pink-300">PSHT Rayon Segarajaya Web Portal</h3>
+                                <p class="text-slate-300 text-xs sm:text-sm line-clamp-2">Portal web resmi PSHT Rayon Segarajaya untuk pendaftaran anggota, galeri kejuaraan, jadwal latihan, dan sertifikasi atlet.</p>
                             </div>
                             <div class="flex flex-wrap gap-1.5 pt-2">
-                                <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-rose-950/80 text-pink-200 border border-pink-500/20">Laravel 11</span>
                                 <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-rose-950/80 text-pink-200 border border-pink-500/20">PHP</span>
                                 <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-rose-950/80 text-pink-200 border border-pink-500/20">MySQL</span>
                                 <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-rose-950/80 text-pink-200 border border-pink-500/20">Bootstrap 5</span>
                             </div>
                             <div class="pt-4 border-t border-pink-500/20 flex items-center justify-between">
-                                <button @click="activeProjectModal = { title: 'PSHT Rayon Segarajaya Web Portal', category: 'Sistem Pencak Silat', summary: 'Portal web resmi PSHT Rayon Segarajaya untuk pendaftaran anggota, galeri kejuaraan, jadwal latihan, dan sertifikasi atlet.', description: 'Platform manajemen keorganisasian dan pendaftaran atlet pencak silat PSHT Rayon Segarajaya Cabang Kota Bekasi Ranting Tarumajaya dengan sistem autentikasi, galeri kejuaraan, dan pendaftaran online.', image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop' }" class="text-xs font-semibold text-pink-400 hover:text-pink-300 flex items-center gap-1.5">
+                                <button @click="activeProjectModal = { title: 'PSHT Rayon Segarajaya Web Portal', category: 'Laravel & Silat System', summary: 'Portal web resmi PSHT Rayon Segarajaya untuk pendaftaran anggota, galeri kejuaraan, jadwal latihan, dan sertifikasi atlet.', description: 'Platform manajemen keorganisasian dan pendaftaran atlet pencak silat PSHT Rayon Segarajaya Cabang Kota Bekasi Ranting Tarumajaya dengan sistem autentikasi, galeri kejuaraan, dan pendaftaran online.', image: '/images/proj-psht-segarajaya.png', demo_url: 'https://pshtsegarajaya.great-site.net/', github_url: 'https://github.com/ekawahyuning/psht-rayon-portal' }" class="text-xs font-semibold text-pink-400 hover:text-pink-300 flex items-center gap-1.5">
                                     <i class="fa-solid fa-circle-info"></i> Detail Proyek
                                 </button>
-                                <a href="https://github.com/wahyuning004/portfolio-eka" target="_blank" class="text-slate-400 hover:text-white transition-colors" title="Source Code">
-                                    <i class="fa-brands fa-github text-lg"></i>
-                                </a>
+                                <div class="flex items-center gap-3">
+                                    <a href="https://github.com/ekawahyuning/psht-rayon-portal" target="_blank" class="text-slate-400 hover:text-white" title="Source Code"><i class="fa-brands fa-github text-lg"></i></a>
+                                    <a href="https://pshtsegarajaya.great-site.net/" target="_blank" class="text-pink-400 hover:text-pink-300 flex items-center gap-1 text-xs font-bold" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project 2: PT Sentra Medizin Platform -->
-                    <div x-show="activeTab === 'all' || activeTab === 'fullstack'"
-                         class="glass-card rounded-3xl overflow-hidden border border-pink-500/20 glass-card-hover flex flex-col group">
+                    <!-- Proyek 2: Y2O Water Solution Platform -->
+                    <div x-show="activeTab === 'all' || activeTab === 'fullstack'" class="glass-card rounded-3xl overflow-hidden border border-pink-500/20 glass-card-hover flex flex-col group">
                         <div class="relative h-52 overflow-hidden bg-rose-950 border-b border-pink-500/20">
-                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" 
-                                 alt="PT Sentra Medizin Platform" 
-                                 class="w-full h-full object-cover object-top transform transition-transform duration-500 group-hover:scale-110">
+                            <img src="/images/proj-y2o-water.png" alt="Y2O Water Solution Platform" class="w-full h-full object-cover object-top transform transition-transform duration-500 group-hover:scale-110">
                             <div class="absolute inset-0 bg-rose-950/40 group-hover:bg-rose-950/20 transition-colors"></div>
-                            <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-rose-950/90 text-pink-300 border border-pink-500/30 backdrop-blur-md">
-                                Laravel & Enterprise
-                            </span>
+                            <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[10px] font-bold uppercase bg-rose-950/90 text-pink-300 border border-pink-500/30">Enterprise Web App</span>
                         </div>
                         <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
                             <div class="space-y-2">
-                                <h3 class="text-xl font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-1">
-                                    PT Sentra Medizin Platform
-                                </h3>
-                                <p class="text-slate-300 text-xs sm:text-sm line-clamp-2 leading-relaxed">
-                                    Platform landing page & portal klien konsultan regulasi alat kesehatan dan perizinan medis Indonesia.
-                                </p>
+                                <h3 class="text-xl font-bold text-white group-hover:text-pink-300">Y2O Water Solution Platform</h3>
+                                <p class="text-slate-300 text-xs sm:text-sm line-clamp-2">Platform edukasi & layanan pemesanan sistem filtrasi air bersih modern untuk kebutuhan rumah tangga dan industri.</p>
                             </div>
                             <div class="flex flex-wrap gap-1.5 pt-2">
-                                <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-rose-950/80 text-pink-200 border border-pink-500/20">Next.js 14</span>
-                                <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-rose-950/80 text-pink-200 border border-pink-500/20">Laravel API</span>
+                                <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-rose-950/80 text-pink-200 border border-pink-500/20">PHP</span>
+                                <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-rose-950/80 text-pink-200 border border-pink-500/20">MySQL</span>
+                                <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-rose-950/80 text-pink-200 border border-pink-500/20">Tailwind CSS</span>
+                            </div>
+                            <div class="pt-4 border-t border-pink-500/20 flex items-center justify-between">
+                                <button @click="activeProjectModal = { title: 'Y2O Water Solution Platform', category: 'Enterprise Web App', summary: 'Platform edukasi & layanan pemesanan sistem filtrasi air bersih modern.', description: 'Web platform komprehensif yang menyediakan kalkulasi kebutuhan air murni, katalog solusi filtrasi air bebas bakteri, edukasi kesehatan air, dan pemesanan instalasi secara langsung (HKI EC002026090327).', image: '/images/proj-y2o-water.png', demo_url: 'https://watersolution-y2o.gt.tc/' }" class="text-xs font-semibold text-pink-400 hover:text-pink-300 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-circle-info"></i> Detail Proyek
+                                </button>
+                                <a href="https://watersolution-y2o.gt.tc/" target="_blank" class="text-pink-400 hover:text-pink-300 flex items-center gap-1 text-xs font-bold"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyek 3: La Vie en Rose Cafe & Bakery -->
+                    <div x-show="activeTab === 'all' || activeTab === 'fullstack'" class="glass-card rounded-3xl overflow-hidden border border-pink-500/20 glass-card-hover flex flex-col group">
+                        <div class="relative h-52 overflow-hidden bg-rose-950 border-b border-pink-500/20">
+                            <img src="/images/proj-lavie-cafe.png" alt="La Vie en Rose Cafe & Bakery" class="w-full h-full object-cover object-top transform transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-rose-950/40 group-hover:bg-rose-950/20 transition-colors"></div>
+                            <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[10px] font-bold uppercase bg-rose-950/90 text-pink-300 border border-pink-500/30">E-Commerce & Web App</span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-bold text-white group-hover:text-pink-300">La Vie en Rose Cafe & Bakery</h3>
+                                <p class="text-slate-300 text-xs sm:text-sm line-clamp-2">Aplikasi web kafe & bakery interaktif berestetika tinggi dengan katalog menu digital, galeri, & pemesanan online.</p>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 pt-2">
+                                <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-rose-950/80 text-pink-200 border border-pink-500/20">Next.js / React</span>
+                                <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-rose-950/80 text-pink-200 border border-pink-500/20">Tailwind CSS</span>
+                            </div>
+                            <div class="pt-4 border-t border-pink-500/20 flex items-center justify-between">
+                                <button @click="activeProjectModal = { title: 'La Vie en Rose Cafe & Bakery', category: 'E-Commerce & Web App', summary: 'Aplikasi web kafe & bakery interaktif berestetika tinggi.', description: 'Aplikasi web modern berkonsep aesthetic pink rose untuk bisnis F&B dengan fitur katalog menu interaktif, testimonial pelanggan, mode gelap/terang, dan keranjang belanja online.', image: '/images/proj-lavie-cafe.png', demo_url: 'https://website-cafe-kelompok-1.vercel.app/' }" class="text-xs font-semibold text-pink-400 hover:text-pink-300 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-circle-info"></i> Detail Proyek
+                                </button>
+                                <a href="https://website-cafe-kelompok-1.vercel.app/" target="_blank" class="text-pink-400 hover:text-pink-300 flex items-center gap-1 text-xs font-bold"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyek 4: Sentra Medizin Portal -->
+                    <div x-show="activeTab === 'all' || activeTab === 'fullstack'" class="glass-card rounded-3xl overflow-hidden border border-pink-500/20 glass-card-hover flex flex-col group">
+                        <div class="relative h-52 overflow-hidden bg-rose-950 border-b border-pink-500/20">
+                            <img src="/images/proj-sentra-medizin-vercel.png" alt="Sentra Medizin - Regulatory Consultancy Portal" class="w-full h-full object-cover object-top transform transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-rose-950/40 group-hover:bg-rose-950/20 transition-colors"></div>
+                            <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[10px] font-bold uppercase bg-rose-950/90 text-pink-300 border border-pink-500/30">Laravel & Enterprise</span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div class="space-y-2">
+                                <h3 class="text-xl font-bold text-white group-hover:text-pink-300">Sentra Medizin Consultancy Portal</h3>
+                                <p class="text-slate-300 text-xs sm:text-sm line-clamp-2">Portal konsultasi legalitas & sertifikasi Alkes, PKRT, Farmasi, & Kosmetik dengan pelacakan status perizinan.</p>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 pt-2">
+                                <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-rose-950/80 text-pink-200 border border-pink-500/20">Laravel 11</span>
                                 <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-rose-950/80 text-pink-200 border border-pink-500/20">PostgreSQL</span>
                             </div>
                             <div class="pt-4 border-t border-pink-500/20 flex items-center justify-between">
-                                <button @click="activeProjectModal = { title: 'PT Sentra Medizin Platform', category: 'Laravel & Enterprise', summary: 'Platform landing page & portal klien konsultan regulasi alat kesehatan dan perizinan medis Indonesia.', description: 'Website resmi PT Sentra Medizin dengan katalog 17 layanan perizinan konsultan medis, sistem pengajuan konsultasi real-time, dan dashboard portal klien.', image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop' }" class="text-xs font-semibold text-pink-400 hover:text-pink-300 flex items-center gap-1.5">
+                                <button @click="activeProjectModal = { title: 'Sentra Medizin Regulatory Portal', category: 'Laravel & Enterprise', summary: 'Portal konsultasi legalitas & sertifikasi Alkes dengan pelacakan perizinan.', description: 'Platform konsultan spesialis regulasi medis terpadu yang memfasilitasi 17 katalog layanan perizinan faskes & kefarmasian dengan pencarian KBLI dan pelacakan status perizinan real-time.', image: '/images/proj-sentra-medizin-vercel.png', demo_url: 'https://sentra-medizin.vercel.app/', github_url: 'https://github.com/wahyuning004/sentra-medizin' }" class="text-xs font-semibold text-pink-400 hover:text-pink-300 flex items-center gap-1.5">
                                     <i class="fa-solid fa-circle-info"></i> Detail Proyek
                                 </button>
-                                <a href="https://github.com/wahyuning004" target="_blank" class="text-slate-400 hover:text-white transition-colors" title="Source Code">
-                                    <i class="fa-brands fa-github text-lg"></i>
-                                </a>
+                                <div class="flex items-center gap-3">
+                                    <a href="https://github.com/wahyuning004/sentra-medizin" target="_blank" class="text-slate-400 hover:text-white" title="Source Code"><i class="fa-brands fa-github text-lg"></i></a>
+                                    <a href="https://sentra-medizin.vercel.app/" target="_blank" class="text-pink-400 hover:text-pink-300 flex items-center gap-1 text-xs font-bold"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project 3: Y2O Water Solution ERP -->
-                    <div x-show="activeTab === 'all' || activeTab === 'fullstack'"
-                         class="glass-card rounded-3xl overflow-hidden border border-pink-500/20 glass-card-hover flex flex-col group">
+                    <!-- Proyek 5: KRL CoPilot -->
+                    <div x-show="activeTab === 'all' || activeTab === 'mobile'" class="glass-card rounded-3xl overflow-hidden border border-pink-500/20 glass-card-hover flex flex-col group">
                         <div class="relative h-52 overflow-hidden bg-rose-950 border-b border-pink-500/20">
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" 
-                                 alt="Y2O Water Solution ERP & POS System" 
-                                 class="w-full h-full object-cover object-top transform transition-transform duration-500 group-hover:scale-110">
+                            <img src="/images/proj-krl-copilot.jpg" alt="KRL CoPilot Android App" class="w-full h-full object-cover object-top transform transition-transform duration-500 group-hover:scale-110">
                             <div class="absolute inset-0 bg-rose-950/40 group-hover:bg-rose-950/20 transition-colors"></div>
-                            <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-rose-950/90 text-pink-300 border border-pink-500/30 backdrop-blur-md">
-                                Laravel & Enterprise
-                            </span>
+                            <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[10px] font-bold uppercase bg-rose-950/90 text-pink-300 border border-pink-500/30">Mobile & Android App</span>
                         </div>
                         <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
                             <div class="space-y-2">
-                                <h3 class="text-xl font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-1">
-                                    Y2O Water Solution ERP & POS System
-                                </h3>
-                                <p class="text-slate-300 text-xs sm:text-sm line-clamp-2 leading-relaxed">
-                                    Aplikasi manajemen stok, kasir POS, dan pelaporan keuangan otomatis untuk bisnis depot air minum modern. (HKI Kemenkumham EC002026090327).
-                                </p>
+                                <h3 class="text-xl font-bold text-white group-hover:text-pink-300">KRL CoPilot Android App</h3>
+                                <p class="text-slate-300 text-xs sm:text-sm line-clamp-2">Aplikasi Android pendamping perjalanan komuter KRL Commuter Line dengan rute, jadwal & notifikasi stasiun.</p>
                             </div>
                             <div class="flex flex-wrap gap-1.5 pt-2">
-                                <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-rose-950/80 text-pink-200 border border-pink-500/20">Laravel</span>
-                                <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-rose-950/80 text-pink-200 border border-pink-500/20">Livewire</span>
-                                <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-rose-950/80 text-pink-200 border border-pink-500/20">MySQL</span>
+                                <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-rose-950/80 text-pink-200 border border-pink-500/20">Java</span>
+                                <span class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-rose-950/80 text-pink-200 border border-pink-500/20">Android Studio</span>
                             </div>
                             <div class="pt-4 border-t border-pink-500/20 flex items-center justify-between">
-                                <button @click="activeProjectModal = { title: 'Y2O Water Solution ERP & POS System', category: 'Laravel & Enterprise', summary: 'Aplikasi manajemen stok, kasir POS, dan pelaporan keuangan otomatis.', description: 'Sistem informasi manajemen depot air minum Y2O Water Solution yang mengelola inventori, transaksi penjualan harian, cetak struk, dan analitik pendapatan. Memegang Sertifikat HKI Kemenkumham RI.', image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop' }" class="text-xs font-semibold text-pink-400 hover:text-pink-300 flex items-center gap-1.5">
+                                <button @click="activeProjectModal = { title: 'KRL CoPilot Android App', category: 'Mobile & Android App', summary: 'Aplikasi Android pendamping perjalanan komuter KRL Commuter Line.', description: 'Aplikasi Android native yang dirancang untuk mempermudah pengguna KRL Commuter Line dalam memantau rute perjalanan, estimasi waktu kedatangan, tarif perjalanan, serta posisi kereta secara intuitif.', image: '/images/proj-krl-copilot.jpg', youtube_embed: 'https://www.youtube.com/embed/hTndrUygBek', demo_url: 'https://youtu.be/hTndrUygBek' }" class="text-xs font-semibold text-pink-400 hover:text-pink-300 flex items-center gap-1.5">
                                     <i class="fa-solid fa-circle-info"></i> Detail Proyek
                                 </button>
-                                <a href="https://github.com/wahyuning004" target="_blank" class="text-slate-400 hover:text-white transition-colors" title="Source Code">
-                                    <i class="fa-brands fa-github text-lg"></i>
-                                </a>
+                                <a href="https://youtu.be/hTndrUygBek" target="_blank" class="text-pink-400 hover:text-pink-300 flex items-center gap-1.5 text-xs font-bold"><i class="fa-brands fa-youtube text-red-500 text-base"></i> Video Demo</a>
                             </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </section>
 
@@ -692,92 +603,556 @@
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-                    <!-- Achievement 1 -->
-                    <div class="glass-card rounded-3xl p-6 border border-pink-500/20 flex flex-col sm:flex-row gap-6 glass-card-hover">
-                        <div class="w-full sm:w-48 h-48 rounded-2xl overflow-hidden border border-pink-500/30 cursor-pointer shrink-0"
-                             @click="activeModalImage = '/images/cert-cnn-presiden.jpg'; activeModalTitle = 'Juara 1 Medali Emas Kejuaraan Silat Nasional'">
-                            <img src="/images/cert-cnn-presiden.jpg" 
-                                 alt="Juara 1 Medali Emas Kejuaraan Silat Nasional" 
-                                 class="w-full h-full object-cover"
-                                 onerror="this.src='https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=800&auto=format&fit=crop'">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="glass-card rounded-3xl p-6 border border-pink-500/20 flex flex-col justify-between space-y-6 glass-card-hover">
+                        <div class="relative h-60 rounded-2xl overflow-hidden border border-pink-500/30 cursor-pointer group" @click="activeModalImage = '/images/gallery-jnc2.jpg'; activeModalTitle = 'Juara 2 Solo Kreatif - Jakarta National Championship II 2024'">
+                            <img src="/images/gallery-jnc2.jpg" alt="Jakarta National Championship II" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase bg-pink-500 text-white">2024</span>
                         </div>
                         <div class="space-y-3">
-                            <span class="inline-block px-3 py-1 rounded-lg text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">
-                                Juara 1 (Medali Emas) • 2024
-                            </span>
-                            <h3 class="text-xl font-bold text-white">Kejuaraan Pencak Silat Tingkat Nasional</h3>
-                            <p class="text-xs text-pink-400 font-semibold">
-                                <i class="fa-solid fa-building-columns mr-1"></i> Pengurus Besar IPSI / Kemenpora RI
-                            </p>
-                            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
-                                Meraih Juara 1 Medali Emas Tanding Dewasa Putra dalam Kejuaraan Pencak Silat Nasional.
-                            </p>
+                            <span class="inline-block px-3 py-1 rounded-lg text-xs font-bold bg-pink-500/20 text-pink-300 border border-pink-500/30">Juara 2 (Medali Perak) Solo Kreatif</span>
+                            <h3 class="text-xl font-bold text-white">Juara 2 Solo Kreatif - Jakarta National Championship II</h3>
+                            <p class="text-xs text-pink-400 font-semibold"><i class="fa-solid fa-building-columns mr-1"></i> Dispora DKI & Kemenpora RI</p>
+                            <p class="text-slate-300 text-xs leading-relaxed">Momen kebahagiaan meraih Medali Perak kategori Solo Kreatif Putri Dewasa pada Kejuaraan Pencak Silat Tingkat Nasional di Padepokan TMII Jakarta.</p>
                         </div>
                     </div>
 
-                    <!-- Achievement 2 -->
-                    <div class="glass-card rounded-3xl p-6 border border-pink-500/20 flex flex-col sm:flex-row gap-6 glass-card-hover">
-                        <div class="w-full sm:w-48 h-48 rounded-2xl overflow-hidden border border-pink-500/30 cursor-pointer shrink-0"
-                             @click="activeModalImage = '/images/cert-kemenpora.jpg'; activeModalTitle = 'Juara 2 Medali Perak Turnamen Silat Indonesia'">
-                            <img src="/images/cert-kemenpora.jpg" 
-                                 alt="Juara 2 Medali Perak Turnamen Silat Indonesia" 
-                                 class="w-full h-full object-cover"
-                                 onerror="this.src='https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=800&auto=format&fit=crop'">
+                    <div class="glass-card rounded-3xl p-6 border border-pink-500/20 flex flex-col justify-between space-y-6 glass-card-hover">
+                        <div class="relative h-60 rounded-2xl overflow-hidden border border-pink-500/30 cursor-pointer group" @click="activeModalImage = '/images/gallery-refc1.png'; activeModalTitle = 'Apresiasi Prestasi Kejuaraan REFC 1 UNPAM'">
+                            <img src="/images/gallery-refc1.png" alt="Apresiasi REFC 1 UNPAM" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase bg-pink-500 text-white">2025</span>
                         </div>
                         <div class="space-y-3">
-                            <span class="inline-block px-3 py-1 rounded-lg text-xs font-bold bg-slate-300/20 text-slate-200 border border-slate-400/30">
-                                Juara 2 (Medali Perak) • 2023
-                            </span>
-                            <h3 class="text-xl font-bold text-white">Open Tournament Pencak Silat Indonesia</h3>
-                            <p class="text-xs text-pink-400 font-semibold">
-                                <i class="fa-solid fa-building-columns mr-1"></i> IPSI Kota Bekasi
-                            </p>
-                            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
-                                Meraih Juara 2 Medali Perak Tanding Dewasa dalam Turnamen Nasional Pencak Silat.
-                            </p>
+                            <span class="inline-block px-3 py-1 rounded-lg text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">Apresiasi Kampus UNPAM</span>
+                            <h3 class="text-xl font-bold text-white">Apresiasi Kejuaraan REFC 1 Tingkat Nasional</h3>
+                            <p class="text-xs text-pink-400 font-semibold"><i class="fa-solid fa-building-columns mr-1"></i> Prodi S1 Teknik Informatika UNPAM</p>
+                            <p class="text-slate-300 text-xs leading-relaxed">Penyerahan berkas & apresiasi atas raihan Medali Emas Kejuaraan REFC 1 Tingkat Nasional bersama jajaran dosen & Ketua Program Studi S1 IT UNPAM.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card rounded-3xl p-6 border border-pink-500/20 flex flex-col justify-between space-y-6 glass-card-hover">
+                        <div class="relative h-60 rounded-2xl overflow-hidden border border-pink-500/30 cursor-pointer group" @click="activeModalImage = '/images/gallery-panglima-tni.jpg'; activeModalTitle = 'Juara 1 Solo Kreatif - Kejuaraan Piala Panglima TNI'">
+                            <img src="/images/gallery-panglima-tni.jpg" alt="Piala Panglima TNI" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase bg-pink-500 text-white">2024</span>
+                        </div>
+                        <div class="space-y-3">
+                            <span class="inline-block px-3 py-1 rounded-lg text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">Juara 1 (Medali Emas) Solo Kreatif</span>
+                            <h3 class="text-xl font-bold text-white">Juara 1 Solo Kreatif - Piala Panglima TNI</h3>
+                            <p class="text-xs text-pink-400 font-semibold"><i class="fa-solid fa-building-columns mr-1"></i> Panglima TNI & PB IPSI</p>
+                            <p class="text-slate-300 text-xs leading-relaxed">Penyerahan Sertifikat Prestasi Juara 1 Medali Emas Solo Kreatif Putri Dewasa Piala Panglima TNI di Gedung Fakultas Ilmu Komputer UNPAM.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card rounded-3xl p-6 border border-pink-500/20 flex flex-col justify-between space-y-6 glass-card-hover">
+                        <div class="relative h-60 rounded-2xl overflow-hidden border border-pink-500/30 cursor-pointer group" @click="activeModalImage = '/images/gallery-seminar-nasional.jpg'; activeModalTitle = 'Penampilan Seni Pencak Silat Seminar Nasional'">
+                            <img src="/images/gallery-seminar-nasional.jpg" alt="Seminar Nasional Silat" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase bg-pink-500 text-white">2025</span>
+                        </div>
+                        <div class="space-y-3">
+                            <span class="inline-block px-3 py-1 rounded-lg text-xs font-bold bg-sky-500/20 text-sky-300 border border-sky-500/30">Peraga Seni Pencak Silat</span>
+                            <h3 class="text-xl font-bold text-white">Penampilan Seni pada Seminar Nasional</h3>
+                            <p class="text-xs text-pink-400 font-semibold"><i class="fa-solid fa-building-columns mr-1"></i> Universitas Pamulang & IPSI</p>
+                            <p class="text-slate-300 text-xs leading-relaxed">Penampilan atraksi keahlian seni pencak silat kategori jurus dan kipas sebagai pengisi acara utama pada Seminar Nasional Kampus UNPAM.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CERTIFICATES SECTION -->
+        <!-- HIGHLY RESPONSIVE CERTIFICATES SECTION (TOTAL 23 COMPLETE ITEMS IN MODERN GRID) -->
         <section id="certificates" class="py-24 relative" x-data="{ certTab: 'all' }">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto space-y-3 mb-10">
                     <span class="text-xs font-extrabold uppercase tracking-widest text-pink-400">Kredensial & Sertifikasi Resmi</span>
-                    <h2 class="text-3xl sm:text-4xl font-bold text-white">Sertifikat Kompetensi, Bootcamp, HKI & Silat</h2>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">Sertifikat IT, Cloud, HKI, Jurnal & Silat (23)</h2>
                     <p class="text-slate-300 text-sm sm:text-base">
-                        Koleksi sertifikasi kompetensi industri (Google Cloud, DeepMind, Microsoft, Dicoding, RevoU, DQLab), HKI Kemenkumham, Jurnal Ilmiah, serta Piagam Juara & Sertifikat Kejuaraan Pencak Silat.
+                        Koleksi 23 sertifikat kompetensi industri (Google Cloud, DeepMind, Microsoft, Dicoding, RevoU, DQLab), HKI Kemenkumham, Jurnal Ilmiah, serta Piagam Juara Silat. Klik gambar untuk melihat tampilan resolusi tinggi.
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- HKI Certificate -->
-                    <div class="glass-card rounded-2xl p-6 border border-pink-500/20 flex flex-col sm:flex-row items-start gap-5 glass-card-hover group">
-                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-sky-500/20 to-pink-500/20 border border-pink-500/30 text-sky-400 flex items-center justify-center shrink-0 text-2xl">
-                            <i class="fa-solid fa-file-contract"></i>
+                <!-- Modern Responsive Filter Pills -->
+                <div class="flex justify-center mb-12">
+                    <div class="inline-flex p-1.5 rounded-2xl glass-card border border-pink-500/30 gap-1.5 sm:gap-2 flex-wrap justify-center max-w-full">
+                        <button @click="certTab = 'all'" :class="certTab === 'all' ? 'bg-gradient-to-r from-pink-500 to-rose-500 text-white font-bold shadow-lg shadow-pink-500/25' : 'text-slate-300 hover:text-white hover:bg-pink-500/10'" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm transition-all flex items-center gap-1.5">
+                            <i class="fa-solid fa-layer-group"></i> Semua (23)
+                        </button>
+                        <button @click="certTab = 'academic'" :class="certTab === 'academic' ? 'bg-gradient-to-r from-pink-500 to-rose-500 text-white font-bold shadow-lg shadow-pink-500/25' : 'text-slate-300 hover:text-white hover:bg-pink-500/10'" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm transition-all flex items-center gap-1.5">
+                            <i class="fa-solid fa-book-bookmark text-sky-400"></i> HKI & Jurnal (3)
+                        </button>
+                        <button @click="certTab = 'bootcamp'" :class="certTab === 'bootcamp' ? 'bg-gradient-to-r from-pink-500 to-rose-500 text-white font-bold shadow-lg shadow-pink-500/25' : 'text-slate-300 hover:text-white hover:bg-pink-500/10'" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm transition-all flex items-center gap-1.5">
+                            <i class="fa-solid fa-laptop-code text-pink-400"></i> IT & Cloud (14)
+                        </button>
+                        <button @click="certTab = 'silat'" :class="certTab === 'silat' ? 'bg-gradient-to-r from-pink-500 to-rose-500 text-white font-bold shadow-lg shadow-pink-500/25' : 'text-slate-300 hover:text-white hover:bg-pink-500/10'" class="px-4 py-2.5 rounded-xl text-xs sm:text-sm transition-all flex items-center gap-1.5">
+                            <i class="fa-solid fa-trophy text-amber-400"></i> Piagam Silat (6)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Responsive 3-Column Grid Layout (Mobile: 1col, Tablet: 2col, Desktop: 3col) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <!-- ================= AKADEMIK, HKI & JURNAL (3 Items with Direct Action Buttons) ================= -->
+                    
+                    <!-- 1. HKI Kemenkumham RI -->
+                    <div x-show="certTab === 'all' || certTab === 'academic'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-hki-kemenkumham.png'; activeModalTitle = 'Surat Pencatatan Ciptaan HKI Kemenkumham RI'">
+                                <img src="/images/cert-hki-kemenkumham.png" alt="HKI Kemenkumham" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-sky-500/90 text-white shadow-md">HKI Kemenkumham</span>
+                            </div>
+                            <div class="space-y-1.5">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Surat Pencatatan Ciptaan HKI Kemenkumham RI</h3>
+                                <p class="text-xs text-pink-300/90 font-medium"><i class="fa-solid fa-building-columns mr-1"></i> DJKI Kemenkumham RI</p>
+                                <p class="text-[11px] text-slate-400 font-mono">No. HKI: EC002026090327</p>
+                            </div>
                         </div>
-                        <div class="flex-1 space-y-2">
-                            <span class="text-[11px] font-bold text-pink-300/90 uppercase tracking-wider">HKI / Hak Cipta • 2026</span>
-                            <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors">Hak Kekayaan Intelektual (HKI) Kemenkumham RI</h3>
-                            <p class="text-xs text-slate-300">Penerbit: <span class="text-pink-300 font-semibold">Direktorat Jenderal Kekayaan Intelektual Kemenkumham RI</span></p>
-                            <p class="text-[11px] text-slate-400 font-mono">ID: EC002026090327</p>
+                        <div class="pt-3 border-t border-pink-500/20">
+                            <a href="https://drive.google.com/file/d/1D9xlbf39uqBwekQ5-0dV0DxG4efX-o6b/view?usp=drivesdk" target="_blank" class="w-full py-2.5 px-3 rounded-xl text-xs font-bold bg-sky-500/20 text-sky-300 border border-sky-500/30 hover:bg-sky-500/30 transition-all flex items-center justify-center gap-2">
+                                <i class="fa-brands fa-google-drive"></i> Lihat File HKI Google Drive <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
                         </div>
                     </div>
 
-                    <!-- Journal Publication Certificate -->
-                    <div class="glass-card rounded-2xl p-6 border border-pink-500/20 flex flex-col sm:flex-row items-start gap-5 glass-card-hover group">
-                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-emerald-500/20 to-pink-500/20 border border-pink-500/30 text-emerald-400 flex items-center justify-center shrink-0 text-2xl">
-                            <i class="fa-solid fa-book-bookmark"></i>
+                    <!-- 2. Publikasi Jurnal APPA -->
+                    <div x-show="certTab === 'all' || certTab === 'academic'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-jurnal-appa.png'; activeModalTitle = 'Publikasi Jurnal APPA 2025'">
+                                <img src="/images/cert-jurnal-appa.png" alt="Jurnal APPA" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-emerald-500/90 text-white shadow-md">Jurnal APPA 2025</span>
+                            </div>
+                            <div class="space-y-1.5">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Publikasi Jurnal APPA: Website Profil & CBT SMPN 2 Kemang</h3>
+                                <p class="text-xs text-pink-300/90 font-medium"><i class="fa-solid fa-book-bookmark mr-1"></i> APPA Jurnal Pengabdian (Vol. 3 No. 4)</p>
+                                <p class="text-[11px] text-slate-400 font-mono">ID: APPA-VOL3-NO4-3697</p>
+                            </div>
                         </div>
-                        <div class="flex-1 space-y-2">
-                            <span class="text-[11px] font-bold text-pink-300/90 uppercase tracking-wider">Jurnal Ilmiah • 2025 - 2026</span>
-                            <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors">Publikasi 2 Jurnal Ilmiah (JRIIN & APPA)</h3>
-                            <p class="text-xs text-slate-300">Penerbit: <span class="text-pink-300 font-semibold">JRIIN & APPA UNPAM</span></p>
-                            <p class="text-[11px] text-slate-400 font-mono">ID: ISSN Verified Journal Article</p>
+                        <div class="pt-3 border-t border-pink-500/20">
+                            <a href="https://jurnalmahasiswa.com/index.php/appa/article/view/3697" target="_blank" class="w-full py-2.5 px-3 rounded-xl text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/30 transition-all flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-book-open"></i> Baca Publikasi Jurnal APPA <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
                         </div>
+                    </div>
+
+                    <!-- 3. Publikasi Jurnal JRIIN -->
+                    <div x-show="certTab === 'all' || certTab === 'academic'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-jurnal-jriin.png'; activeModalTitle = 'Publikasi Jurnal JRIIN 2026'">
+                                <img src="/images/cert-jurnal-jriin.png" alt="Jurnal JRIIN" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-emerald-500/90 text-white shadow-md">Jurnal JRIIN 2026</span>
+                            </div>
+                            <div class="space-y-1.5">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Publikasi Jurnal JRIIN: PPDB Web Laravel SDN Bantarkambing 03</h3>
+                                <p class="text-xs text-pink-300/90 font-medium"><i class="fa-solid fa-book-bookmark mr-1"></i> JRIIN Jurnal Riset IT (Vol. 4 No. 1)</p>
+                                <p class="text-[11px] text-slate-400 font-mono">ID: JRIIN-VOL4-NO1-3928</p>
+                            </div>
+                        </div>
+                        <div class="pt-3 border-t border-pink-500/20">
+                            <a href="https://jurnalmahasiswa.com/index.php/jriin/article/view/3928" target="_blank" class="w-full py-2.5 px-3 rounded-xl text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/30 transition-all flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-book-open"></i> Baca Publikasi Jurnal JRIIN <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- ================= IT & CLOUD CERTIFICATES (14 Items - Pure Clean Cards) ================= -->
+
+                    <!-- 4. Google DeepMind SLM -->
+                    <div x-show="certTab === 'all' || certTab === 'bootcamp'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-gdeepmind-slm.png'; activeModalTitle = 'Train a Small Language Model - Google DeepMind'">
+                                <img src="/images/cert-gdeepmind-slm.png" alt="Google DeepMind" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-pink-500/90 text-white shadow-md">Artificial Intelligence</span>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Train a Small Language Model</h3>
+                                <p class="text-xs text-pink-300/90 font-medium">Google DeepMind</p>
+                                <p class="text-[11px] text-slate-400 font-mono">ID: GDM-SLM-ADVANCED-2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. Google Cloud ADK -->
+                    <div x-show="certTab === 'all' || certTab === 'bootcamp'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-gcloud-adk.png'; activeModalTitle = 'Engineer AI Agents with ADK - Google Cloud'">
+                                <img src="/images/cert-gcloud-adk.png" alt="Google Cloud ADK" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-pink-500/90 text-white shadow-md">Artificial Intelligence</span>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Engineer AI Agents with Agent Development Kit (ADK)</h3>
+                                <p class="text-xs text-pink-300/90 font-medium">Google Cloud</p>
+                                <p class="text-[11px] text-slate-400 font-mono">ID: GCP-ADK-INTERMEDIATE-2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. Google Cloud Gemini Enterprise -->
+                    <div x-show="certTab === 'all' || certTab === 'bootcamp'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-gcloud-gemini.png'; activeModalTitle = 'Create Your First Gemini Enterprise Application - Google Cloud'">
+                                <img src="/images/cert-gcloud-gemini.png" alt="Google Cloud Gemini" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-pink-500/90 text-white shadow-md">Artificial Intelligence</span>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Create Your First Gemini Enterprise Application</h3>
+                                <p class="text-xs text-pink-300/90 font-medium">Google Cloud</p>
+                                <p class="text-[11px] text-slate-400 font-mono">ID: GCP-GEMINI-ENTERPRISE-2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. Google Cloud Apigee X -->
+                    <div x-show="certTab === 'all' || certTab === 'bootcamp'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-gcloud-apigee.png'; activeModalTitle = 'Develop and Secure APIs with Apigee X - Google Cloud'">
+                                <img src="/images/cert-gcloud-apigee.png" alt="Google Cloud Apigee" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-pink-500/90 text-white shadow-md">API Engineering</span>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Develop and Secure APIs with Apigee X</h3>
+                                <p class="text-xs text-pink-300/90 font-medium">Google Cloud</p>
+                                <p class="text-[11px] text-slate-400 font-mono">ID: GCP-APIGEE-X-2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. Google Cloud API Gateway -->
+                    <div x-show="certTab === 'all' || certTab === 'bootcamp'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-gcloud-apigateway.png'; activeModalTitle = 'Deploy and Secure Serverless APIs with API Gateway - Google Cloud'">
+                                <img src="/images/cert-gcloud-apigateway.png" alt="Google Cloud API Gateway" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-pink-500/90 text-white shadow-md">Serverless & Security</span>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Deploy and Secure Serverless APIs with API Gateway</h3>
+                                <p class="text-xs text-pink-300/90 font-medium">Google Cloud</p>
+                                <p class="text-[11px] text-slate-400 font-mono">ID: GCP-API-GATEWAY-2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 9. Google Cloud Cloud Run Functions -->
+                    <div x-show="certTab === 'all' || certTab === 'bootcamp'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-gcloud-cloudrun.png'; activeModalTitle = 'Build Serverless Applications with Cloud Run Functions - Google Cloud'">
+                                <img src="/images/cert-gcloud-cloudrun.png" alt="Google Cloud Run" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-pink-500/90 text-white shadow-md">Serverless Architecture</span>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Build Serverless Applications with Cloud Run Functions</h3>
+                                <p class="text-xs text-pink-300/90 font-medium">Google Cloud</p>
+                                <p class="text-[11px] text-slate-400 font-mono">ID: GCP-CLOUDRUN-FUNCTIONS-2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 10. Google Cloud CI/CD Pipelines -->
+                    <div x-show="certTab === 'all' || certTab === 'bootcamp'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-gcloud-cicd.png'; activeModalTitle = 'Implement CI/CD Pipelines on Google Cloud'">
+                                <img src="/images/cert-gcloud-cicd.png" alt="Google Cloud CI/CD" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-pink-500/90 text-white shadow-md">DevOps & Automation</span>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Implement CI/CD Pipelines on Google Cloud</h3>
+                                <p class="text-xs text-pink-300/90 font-medium">Google Cloud</p>
+                                <p class="text-[11px] text-slate-400 font-mono">ID: GCP-CICD-PIPELINES-2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 11. Google Cloud Kubernetes (GKE) -->
+                    <div x-show="certTab === 'all' || certTab === 'bootcamp'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-gcloud-kubernetes.png'; activeModalTitle = 'Manage Kubernetes in Google Cloud'">
+                                <img src="/images/cert-gcloud-kubernetes.png" alt="Google Cloud Kubernetes" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-pink-500/90 text-white shadow-md">Cloud Infrastructure</span>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Manage Kubernetes in Google Cloud</h3>
+                                <p class="text-xs text-pink-300/90 font-medium">Google Cloud</p>
+                                <p class="text-[11px] text-slate-400 font-mono">ID: GCP-KUBERNETES-GKE-2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 12. Google Cloud Terraform Infra -->
+                    <div x-show="certTab === 'all' || certTab === 'bootcamp'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-gcloud-terraform.png'; activeModalTitle = 'Build Infrastructure with Terraform on Google Cloud'">
+                                <img src="/images/cert-gcloud-terraform.png" alt="Google Cloud Terraform" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-pink-500/90 text-white shadow-md">Infrastructure as Code</span>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Build Infrastructure with Terraform on Google Cloud</h3>
+                                <p class="text-xs text-pink-300/90 font-medium">Google Cloud</p>
+                                <p class="text-[11px] text-slate-400 font-mono">ID: GCP-TERRAFORM-INFRA-2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 13. Dicoding Azure AI -->
+                    <div x-show="certTab === 'all' || certTab === 'bootcamp'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-dicoding-azure.png'; activeModalTitle = 'Membangun Aplikasi Gen AI dengan Microsoft Azure'">
+                                <img src="/images/cert-dicoding-azure.png" alt="Dicoding Azure" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-sky-500/90 text-white shadow-md">Azure AI & Cloud</span>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Membangun Aplikasi Gen AI dengan Microsoft Azure</h3>
+                                <p class="text-xs text-pink-300/90 font-medium">Dicoding Indonesia & Microsoft</p>
+                                <p class="text-[11px] text-slate-400 font-mono">ID Kredensial: RVZKM90QEXD5</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 14. Dicoding Microsoft Fabric -->
+                    <div x-show="certTab === 'all' || certTab === 'bootcamp'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-dicoding-fabric.png'; activeModalTitle = 'Belajar Penerapan Data Science dengan Microsoft Fabric'">
+                                <img src="/images/cert-dicoding-fabric.png" alt="Dicoding Fabric" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-sky-500/90 text-white shadow-md">Data Science</span>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Belajar Penerapan Data Science dengan Microsoft Fabric</h3>
+                                <p class="text-xs text-pink-300/90 font-medium">Dicoding Indonesia & Microsoft</p>
+                                <p class="text-[11px] text-slate-400 font-mono">ID Kredensial: JMZVLQOLOXN9</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 15. RevoU Data Analytics -->
+                    <div x-show="certTab === 'all' || certTab === 'bootcamp'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-revou-data-analytics.png'; activeModalTitle = 'Intro to Data Analytics - RevoU'">
+                                <img src="/images/cert-revou-data-analytics.png" alt="RevoU" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-purple-500/90 text-white shadow-md">Data Analytics</span>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Intro to Data Analytics (2-Weeks Online Course)</h3>
+                                <p class="text-xs text-pink-300/90 font-medium">RevoU (PT Revolusi Cita Edukasi)</p>
+                                <p class="text-[11px] text-slate-400 font-mono">ID: REVOU-DATA-ANALYTICS-2024</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 16. DQLab SQL AI -->
+                    <div x-show="certTab === 'all' || certTab === 'bootcamp'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-dqlab-sql-ai.png'; activeModalTitle = 'Guide to Learn SQL with AI - DQLab'">
+                                <img src="/images/cert-dqlab-sql-ai.png" alt="DQLab SQL AI" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-amber-500/90 text-white shadow-md">SQL & AI</span>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Guide to Learn SQL with AI at DQLab</h3>
+                                <p class="text-xs text-pink-300/90 font-medium">DQLab, Xeratic & UMN</p>
+                                <p class="text-[11px] text-slate-400 font-mono">ID: DQLABAI003NEVOFL</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 17. DQLab Data Science Python -->
+                    <div x-show="certTab === 'all' || certTab === 'bootcamp'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-dqlab-ds-python.png'; activeModalTitle = 'Introduction to Data Science with Python - DQLab'">
+                                <img src="/images/cert-dqlab-ds-python.png" alt="DQLab Data Science Python" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-amber-500/90 text-white shadow-md">Python & DS</span>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Introduction to Data Science with Python</h3>
+                                <p class="text-xs text-pink-300/90 font-medium">DQLab, Xeratic & UMN</p>
+                                <p class="text-[11px] text-slate-400 font-mono">ID: DQLABINTP1CKRQPH</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================= SILAT CERTIFICATES & PIAGAM JUARA (6 Items Complete) ================= -->
+
+                    <!-- 18. Piala Panglima TNI 2024 Gold -->
+                    <div x-show="certTab === 'all' || certTab === 'silat'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-panglima-tni.jpg'; activeModalTitle = 'Piagam Juara 1 Emas Piala Panglima TNI 2024'">
+                                <img src="/images/cert-panglima-tni.jpg" alt="Panglima TNI Gold" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-amber-500/90 text-white shadow-md">Juara 1 (Medali Emas)</span>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Piagam Juara 1 Medali Emas Solo Kreatif - Piala Panglima TNI 2024</h3>
+                                <p class="text-xs text-pink-300/90 font-medium">Panglima TNI & PB IPSI</p>
+                                <p class="text-[11px] text-slate-400 font-mono">ID: PANGLIMA-TNI-GOLD-2024</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 19. REFC 1 Tingkat Nasional 2025 Gold -->
+                    <div x-show="certTab === 'all' || certTab === 'silat'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-refc1.jpg'; activeModalTitle = 'Piagam Juara 1 Emas REFC 1 Nasional 2025'">
+                                <img src="/images/cert-refc1.jpg" alt="REFC 1 Gold" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-amber-500/90 text-white shadow-md">Juara 1 (Medali Emas)</span>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Piagam Juara 1 Medali Emas Jurus Tunggal - REFC 1 Nasional 2025</h3>
+                                <p class="text-xs text-pink-300/90 font-medium">PB IPSI, Kemenpora RI & KONI Pusat</p>
+                                <p class="text-[11px] text-slate-400 font-mono">ID: REFC1-GOLD-2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 20. Piala Ketua DPRD Kota Bekasi 2025 Gold -->
+                    <div x-show="certTab === 'all' || certTab === 'silat'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-dprd-bekasi.jpg'; activeModalTitle = 'Piagam Juara 1 Emas Piala Ketua DPRD Kota Bekasi 2025'">
+                                <img src="/images/cert-dprd-bekasi.jpg" alt="DPRD Bekasi Gold" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-amber-500/90 text-white shadow-md">Juara 1 (Medali Emas)</span>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Piagam Juara 1 Medali Emas Solo Dewasa - Piala DPRD Bekasi</h3>
+                                <p class="text-xs text-pink-300/90 font-medium">Ketua DPRD Kota Bekasi & Disdik / KONI</p>
+                                <p class="text-[11px] text-slate-400 font-mono">ID: DPRD-BEKASI-GOLD-2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 21. Jakarta National Championship II 2024 Silver -->
+                    <div x-show="certTab === 'all' || certTab === 'silat'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-jnc2.png'; activeModalTitle = 'Piagam Juara 2 Perak Jakarta National Championship II 2024'">
+                                <img src="/images/cert-jnc2.png" alt="JNC 2 Silver" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-slate-400/90 text-white shadow-md">Juara 2 (Medali Perak)</span>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Piagam Juara 2 Medali Perak Solo Kreatif - JNC II 2024</h3>
+                                <p class="text-xs text-pink-300/90 font-medium">Dispora DKI Jakarta & Kemenpora RI</p>
+                                <p class="text-[11px] text-slate-400 font-mono">ID: JNC2-SILVER-2024</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 22. CNN Indonesia Piala Presiden 2026 Official -->
+                    <div x-show="certTab === 'all' || certTab === 'silat'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-cnn-presiden.jpg'; activeModalTitle = 'Official CNN Indonesia Piala Presiden 2026'">
+                                <img src="/images/cert-cnn-presiden.jpg" alt="CNN Piala Presiden" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-amber-500/90 text-white shadow-md">Official Certificate</span>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Official Certificate - CNN Indonesia Piala Presiden 2026</h3>
+                                <p class="text-xs text-pink-300/90 font-medium">PB IPSI & CNN Indonesia</p>
+                                <p class="text-[11px] text-slate-400 font-mono">ID: 0067/OFFICIAL/CNN Indonesia-Piala Presiden 2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 23. Kemenpora International Championship 2025 Coach -->
+                    <div x-show="certTab === 'all' || certTab === 'silat'" class="glass-card rounded-3xl p-5 border border-pink-500/20 glass-card-hover flex flex-col justify-between space-y-4 group">
+                        <div class="space-y-4">
+                            <div class="relative h-48 rounded-2xl overflow-hidden border border-pink-500/30 bg-rose-950 cursor-pointer group/img" @click="activeModalImage = '/images/cert-kemenpora.jpg'; activeModalTitle = 'Coach Certificate Kemenpora International 2025'">
+                                <img src="/images/cert-kemenpora.jpg" alt="Coach Kemenpora" class="w-full h-full object-cover group-hover/img:scale-108 transition-transform duration-500">
+                                <div class="absolute inset-0 bg-rose-950/40 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center">
+                                    <span class="w-10 h-10 rounded-full bg-pink-500/90 text-white flex items-center justify-center shadow-lg"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+                                </div>
+                                <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-amber-500/90 text-white shadow-md">Coach Certificate</span>
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-base font-bold text-white group-hover:text-pink-300 transition-colors line-clamp-2">Coach Certificate - Kemenpora International Championship</h3>
+                                <p class="text-xs text-pink-300/90 font-medium">Kemenpora RI</p>
+                                <p class="text-[11px] text-slate-400 font-mono">ID: KEMENPORA-INT-SILAT-2025-COACH</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- DOWNLOAD CV BANNER SECTION -->
+        <section class="py-16 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="relative glass-card rounded-3xl p-8 md:p-12 border border-pink-500/30 overflow-hidden text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-8 bg-gradient-to-r from-rose-950 via-[#1B1119] to-rose-950">
+                    <div class="space-y-3 max-w-2xl">
+                        <span class="px-3 py-1 rounded-full text-xs font-bold bg-pink-500/20 text-pink-300 border border-pink-500/30">
+                            Curriculum Vitae Terupdate
+                        </span>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-white">
+                            Ingin Berdiskusi atau Berkolaborasi?
+                        </h2>
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                            Unduh berkas CV resmi Eka Wahyuning Tiyasa untuk melihat rincian pendidikan S1 Teknik Informatika UNPAM, keahlian Laravel, serta riwayat prestasi atlet & official pencak silat.
+                        </p>
+                    </div>
+
+                    <div class="shrink-0 flex flex-col sm:flex-row items-center gap-3">
+                        <button @click="activeModalImage = '/images/cv-eka.jpg'; activeModalTitle = 'Curriculum Vitae - Eka Wahyuning Tiyasa'" class="px-7 py-4 rounded-full text-sm font-bold text-pink-200 bg-rose-950/80 hover:bg-rose-900 border border-pink-500/40 shadow-lg transition-all duration-300 hover:scale-105 flex items-center gap-2">
+                            <i class="fa-solid fa-eye text-lg text-pink-400"></i> Lihat Preview CV
+                        </button>
+                        <a href="/cv/CV_Eka_Wahyuning_Tiyasa.pdf" download class="px-8 py-4 rounded-full text-sm font-bold text-white bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-400 hover:to-rose-400 shadow-xl shadow-pink-500/30 transition-all duration-300 hover:scale-105 flex items-center gap-3">
+                            <i class="fa-solid fa-file-arrow-down text-lg"></i> Unduh Berkas CV
+                        </a>
                     </div>
                 </div>
             </div>
@@ -789,9 +1164,7 @@
                 <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
                     <span class="text-xs font-extrabold uppercase tracking-widest text-pink-400">Hubungi Saya</span>
                     <h2 class="text-3xl sm:text-4xl font-bold text-white">Mari Berkolaborasi & Terhubung</h2>
-                    <p class="text-slate-300 text-sm sm:text-base">
-                        Silakan kirimkan pesan langsung melalui formulir di bawah ini atau hubungi melalui media sosial resmi.
-                    </p>
+                    <p class="text-slate-300 text-sm sm:text-base">Silakan kirimkan pesan langsung melalui formulir di bawah ini atau hubungi melalui media sosial resmi.</p>
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-5xl mx-auto">
@@ -800,23 +1173,64 @@
                             <h3 class="text-xl font-bold text-white">Informasi Kontak</h3>
                             <div class="space-y-4">
                                 <a href="mailto:tiyasaekawahyuning@gmail.com" class="flex items-center gap-4 p-3 rounded-xl hover:bg-rose-950/60 transition-colors group">
-                                    <div class="w-11 h-11 rounded-xl bg-pink-500/20 text-pink-300 flex items-center justify-center shrink-0">
+                                    <div class="w-11 h-11 rounded-xl bg-pink-500/20 text-pink-300 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                                         <i class="fa-solid fa-envelope text-lg"></i>
                                     </div>
                                     <div>
                                         <span class="text-[11px] text-slate-400 font-semibold block">Email Utama</span>
-                                        <span class="text-sm font-semibold text-white group-hover:text-pink-300">tiyasaekawahyuning@gmail.com</span>
+                                        <span class="text-sm font-semibold text-white group-hover:text-pink-300 transition-colors">tiyasaekawahyuning@gmail.com</span>
                                     </div>
                                 </a>
+
                                 <a href="https://wa.me/628999652543" target="_blank" class="flex items-center gap-4 p-3 rounded-xl hover:bg-rose-950/60 transition-colors group">
-                                    <div class="w-11 h-11 rounded-xl bg-emerald-500/20 text-emerald-300 flex items-center justify-center shrink-0">
+                                    <div class="w-11 h-11 rounded-xl bg-emerald-500/20 text-emerald-300 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                                         <i class="fa-brands fa-whatsapp text-lg"></i>
                                     </div>
                                     <div>
                                         <span class="text-[11px] text-slate-400 font-semibold block">Telepon / WhatsApp</span>
-                                        <span class="text-sm font-semibold text-white group-hover:text-emerald-300">+62 899-9652-543</span>
+                                        <span class="text-sm font-semibold text-white group-hover:text-emerald-300 transition-colors">+62 899-9652-543</span>
                                     </div>
                                 </a>
+
+                                <a href="https://github.com/wahyuning004" target="_blank" class="flex items-center gap-4 p-3 rounded-xl hover:bg-rose-950/60 transition-colors group">
+                                    <div class="w-11 h-11 rounded-xl bg-purple-500/20 text-purple-300 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                                        <i class="fa-brands fa-github text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-[11px] text-slate-400 font-semibold block">GitHub Repository</span>
+                                        <span class="text-sm font-semibold text-white group-hover:text-purple-300 transition-colors">github.com/wahyuning004</span>
+                                    </div>
+                                </a>
+
+                                <a href="https://www.linkedin.com/in/eka-wahyuning-tiyasa" target="_blank" class="flex items-center gap-4 p-3 rounded-xl hover:bg-rose-950/60 transition-colors group">
+                                    <div class="w-11 h-11 rounded-xl bg-sky-500/20 text-sky-300 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                                        <i class="fa-brands fa-linkedin-in text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-[11px] text-slate-400 font-semibold block">LinkedIn Profile</span>
+                                        <span class="text-sm font-semibold text-white group-hover:text-sky-300 transition-colors">eka-wahyuning-tiyasa</span>
+                                    </div>
+                                </a>
+
+                                <a href="https://www.instagram.com/ekawhynngtysa" target="_blank" class="flex items-center gap-4 p-3 rounded-xl hover:bg-rose-950/60 transition-colors group">
+                                    <div class="w-11 h-11 rounded-xl bg-pink-500/20 text-pink-300 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                                        <i class="fa-brands fa-instagram text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-[11px] text-slate-400 font-semibold block">Instagram Profile</span>
+                                        <span class="text-sm font-semibold text-white group-hover:text-pink-300 transition-colors">@ekawhynngtysa</span>
+                                    </div>
+                                </a>
+
+                                <div class="flex items-center gap-4 p-3 rounded-xl">
+                                    <div class="w-11 h-11 rounded-xl bg-amber-500/20 text-amber-300 flex items-center justify-center shrink-0">
+                                        <i class="fa-solid fa-location-dot text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <span class="text-[11px] text-slate-400 font-semibold block">Domisili & Kampus</span>
+                                        <span class="text-xs font-semibold text-white">Segarajaya, Tarumajaya, Kab. Bekasi / UNPAM</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -835,10 +1249,14 @@
                                 </div>
                             </div>
                             <div>
+                                <label class="block text-xs font-semibold text-pink-200 mb-2">Subjek / Perihal</label>
+                                <input type="text" required placeholder="Tawaran Kerja / Proyek / Diskusi" class="w-full px-4 py-3 rounded-xl bg-rose-950/90 border border-pink-500/30 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-pink-400">
+                            </div>
+                            <div>
                                 <label class="block text-xs font-semibold text-pink-200 mb-2">Pesan Anda</label>
                                 <textarea rows="4" required placeholder="Tuliskan pesan detail Anda di sini..." class="w-full px-4 py-3 rounded-xl bg-rose-950/90 border border-pink-500/30 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-pink-400"></textarea>
                             </div>
-                            <button type="submit" class="w-full py-3.5 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-400 hover:to-rose-400 shadow-lg shadow-pink-500/25 flex items-center justify-center gap-2">
+                            <button type="submit" class="w-full py-3.5 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-400 hover:to-rose-400 shadow-lg flex items-center justify-center gap-2">
                                 <i class="fa-solid fa-paper-plane"></i> Kirim Pesan Sekarang
                             </button>
                         </form>
@@ -849,23 +1267,86 @@
 
         <!-- FOOTER -->
         <footer class="pt-16 pb-12 bg-[#0C080D] border-t border-pink-500/20 text-slate-300">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-400 space-y-2">
-                <p>&copy; 2026 Eka Wahyuning Tiyasa. S1 Teknik Informatika Universitas Pamulang. All Rights Reserved.</p>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-pink-500/15">
+                    <div class="space-y-4">
+                        <a href="#hero" class="flex items-center gap-3 group inline-flex">
+                            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-pink-400 via-rose-400 to-amber-300 p-[2px]">
+                                <div class="w-full h-full bg-[#130E14] rounded-[10px] flex items-center justify-center font-bold text-pink-400 text-sm">
+                                    EWT
+                                </div>
+                            </div>
+                            <div>
+                                <span class="font-bold text-lg text-white group-hover:text-pink-300 transition-colors">Eka Wahyuning Tiyasa</span>
+                                <span class="block text-xs text-pink-300/70">UNPAM • Teknik Informatika</span>
+                            </div>
+                        </a>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Mahasiswa S1 Teknik Informatika Universitas Pamulang, Pemegang HKI Kemenkumham, Penulis Jurnal Ilmiah & Atlet Pencak Silat Tingkat Nasional.
+                        </p>
+                        <div class="flex items-center gap-2 pt-2">
+                            <a href="https://www.linkedin.com/in/eka-wahyuning-tiyasa" target="_blank" class="w-9 h-9 rounded-xl bg-rose-950/80 border border-pink-500/20 hover:border-pink-400 text-pink-300 hover:text-white flex items-center justify-center transition-all hover:scale-110" title="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in text-sm"></i>
+                            </a>
+                            <a href="https://www.instagram.com/ekawhynngtysa" target="_blank" class="w-9 h-9 rounded-xl bg-rose-950/80 border border-pink-500/20 hover:border-pink-400 text-pink-300 hover:text-white flex items-center justify-center transition-all hover:scale-110" title="Instagram">
+                                <i class="fa-brands fa-instagram text-sm"></i>
+                            </a>
+                            <a href="mailto:tiyasaekawahyuning@gmail.com" class="w-9 h-9 rounded-xl bg-rose-950/80 border border-pink-500/20 hover:border-pink-400 text-pink-300 hover:text-white flex items-center justify-center transition-all hover:scale-110" title="Email Direct">
+                                <i class="fa-solid fa-envelope text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+                        <h4 class="text-sm font-bold text-white uppercase tracking-wider">Navigasi Utama</h4>
+                        <ul class="space-y-2 text-xs">
+                            <li><a href="#hero" class="hover:text-pink-300 transition-colors flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-pink-500/60"></i> Beranda Hero</a></li>
+                            <li><a href="#about" class="hover:text-pink-300 transition-colors flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-pink-500/60"></i> Tentang Saya & Pendidikan</a></li>
+                            <li><a href="#projects" class="hover:text-pink-300 transition-colors flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-pink-500/60"></i> Portofolio Proyek Web</a></li>
+                            <li><a href="#achievements" class="hover:text-pink-300 transition-colors flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-pink-500/60"></i> Prestasi & Galeri Silat</a></li>
+                            <li><a href="#certificates" class="hover:text-pink-300 transition-colors flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-pink-500/60"></i> Sertifikat IT & HKI</a></li>
+                            <li><a href="#contact" class="hover:text-pink-300 transition-colors flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-pink-500/60"></i> Kontak Direct</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-3">
+                        <h4 class="text-sm font-bold text-white uppercase tracking-wider">Kualifikasi Utama</h4>
+                        <ul class="space-y-2 text-xs text-slate-400">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400 text-xs"></i> S1 Teknik Informatika (Semester 7 UNPAM)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400 text-xs"></i> MAN 4 Bekasi (Jurusan MIPA - 85.00)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400 text-xs"></i> HKI Kemenkumham RI EC002026090327</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400 text-xs"></i> Penulis Jurnal Ilmiah (JRIIN & APPA)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400 text-xs"></i> Peraih Medali Kejuaraan Silat Nasional</li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h4 class="text-sm font-bold text-white uppercase tracking-wider">Dokumen Resmi</h4>
+                        <p class="text-xs text-slate-400">
+                            Unduh Curriculum Vitae (CV) terbaru Eka Wahyuning Tiyasa untuk rincian latar belakang lengkap.
+                        </p>
+                        <a href="/cv/CV_Eka_Wahyuning_Tiyasa.pdf" download class="w-full py-2.5 px-4 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-pink-500 via-rose-400 to-pink-600 hover:from-pink-400 hover:to-rose-500 shadow-md shadow-pink-500/20 transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-file-arrow-down"></i> Unduh CV PDF Resmi
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+                    <p>&copy; 2026 Eka Wahyuning Tiyasa. S1 Teknik Informatika Universitas Pamulang. All Rights Reserved.</p>
+                    <a href="#hero" class="px-4 py-2 rounded-full bg-rose-950/80 border border-pink-500/20 hover:border-pink-400 text-pink-300 hover:text-white transition-all flex items-center gap-1.5 shadow-sm">
+                        <span>Kembali ke Atas</span>
+                        <i class="fa-solid fa-arrow-up text-xs"></i>
+                    </a>
+                </div>
             </div>
         </footer>
 
         <!-- IMAGE LIGHTBOX MODAL -->
-        <div x-show="activeModalImage !== null" 
-             x-transition:enter="transition ease-out duration-300"
-             x-transition:enter-start="opacity-0"
-             x-transition:enter-end="opacity-100"
-             class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-rose-950/90 backdrop-blur-md">
+        <div x-show="activeModalImage !== null" x-transition:enter="transition ease-out duration-300" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-rose-950/90 backdrop-blur-md">
             <div class="relative max-w-4xl w-full glass-card rounded-3xl p-4 border border-pink-500/30 shadow-2xl space-y-4">
                 <div class="flex items-center justify-between px-2">
                     <h3 x-text="activeModalTitle" class="text-base font-bold text-white truncate"></h3>
-                    <button @click="activeModalImage = null" class="w-9 h-9 rounded-full bg-rose-900 text-pink-300 hover:text-white flex items-center justify-center">
-                        <i class="fa-solid fa-xmark text-lg"></i>
-                    </button>
+                    <button @click="activeModalImage = null" class="w-9 h-9 rounded-full bg-rose-900 text-pink-300 hover:text-white flex items-center justify-center"><i class="fa-solid fa-xmark text-lg"></i></button>
                 </div>
                 <div class="rounded-2xl overflow-hidden max-h-[75vh] flex justify-center bg-rose-950 border border-pink-500/20">
                     <img :src="activeModalImage" :alt="activeModalTitle" class="max-h-[75vh] w-auto object-contain">
@@ -874,11 +1355,7 @@
         </div>
 
         <!-- PROJECT DETAIL MODAL -->
-        <div x-show="activeProjectModal !== null" 
-             x-transition:enter="transition ease-out duration-300"
-             x-transition:enter-start="opacity-0 scale-95"
-             x-transition:enter-end="opacity-100 scale-100"
-             class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-rose-950/90 backdrop-blur-md">
+        <div x-show="activeProjectModal !== null" x-transition:enter="transition ease-out duration-300" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-rose-950/90 backdrop-blur-md">
             <template x-if="activeProjectModal">
                 <div class="relative max-w-2xl w-full glass-card rounded-3xl p-6 sm:p-8 border border-pink-500/30 shadow-2xl space-y-6">
                     <div class="flex items-start justify-between">
@@ -886,15 +1363,26 @@
                             <span x-text="activeProjectModal.category" class="text-xs font-bold text-pink-400 uppercase"></span>
                             <h3 x-text="activeProjectModal.title" class="text-2xl font-bold text-white mt-1"></h3>
                         </div>
-                        <button @click="activeProjectModal = null" class="w-9 h-9 rounded-full bg-rose-900 text-pink-300 hover:text-white flex items-center justify-center shrink-0">
-                            <i class="fa-solid fa-xmark text-lg"></i>
-                        </button>
+                        <button @click="activeProjectModal = null" class="w-9 h-9 rounded-full bg-rose-900 text-pink-300 hover:text-white flex items-center justify-center shrink-0"><i class="fa-solid fa-xmark text-lg"></i></button>
                     </div>
+                    <template x-if="activeProjectModal.youtube_embed">
+                        <div class="rounded-2xl overflow-hidden border border-pink-500/20 aspect-video bg-rose-950">
+                            <iframe :src="activeProjectModal.youtube_embed" class="w-full h-full" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </template>
+                    <template x-if="!activeProjectModal.youtube_embed">
+                        <div class="rounded-2xl overflow-hidden border border-pink-500/20 h-64 bg-rose-950">
+                            <img :src="activeProjectModal.image" :alt="activeProjectModal.title" class="w-full h-full object-cover object-top">
+                        </div>
+                    </template>
                     <p x-text="activeProjectModal.description || activeProjectModal.summary" class="text-slate-300 text-sm leading-relaxed"></p>
-                    <div class="pt-4 border-t border-pink-500/20 flex items-center justify-end">
-                        <button @click="activeProjectModal = null" class="px-5 py-2.5 rounded-xl bg-rose-900/80 hover:bg-rose-800 text-xs font-semibold text-pink-200">
-                            Tutup
-                        </button>
+                    <div class="pt-4 border-t border-pink-500/20 flex items-center justify-between">
+                        <button @click="activeProjectModal = null" class="px-5 py-2.5 rounded-xl bg-rose-900/80 hover:bg-rose-800 text-xs font-semibold text-pink-200">Tutup</button>
+                        <template x-if="activeProjectModal.demo_url">
+                            <a :href="activeProjectModal.demo_url" target="_blank" class="px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-pink-500 hover:bg-pink-400 shadow-md flex items-center gap-2">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Buka Website / Demo
+                            </a>
+                        </template>
                     </div>
                 </div>
             </template>
