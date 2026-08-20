@@ -22,7 +22,7 @@ foreach ($tmpDirectories as $dir) {
 $envVars = [
     'APP_ENV' => 'production',
     'APP_KEY' => 'base64:6kYV90vXwYy6zG1E8a4xQ2uN9mP8kL7jH5gF3dS1aA0=',
-    'APP_DEBUG' => 'true',
+    'APP_DEBUG' => 'false',
     'DB_CONNECTION' => 'sqlite',
     'DB_DATABASE' => ':memory:',
     'CACHE_STORE' => 'array',
