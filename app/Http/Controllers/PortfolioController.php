@@ -203,17 +203,6 @@ class PortfolioController extends Controller
      */
     private function getAchievementsData()
     {
-        try {
-            if (Schema::hasTable('achievements')) {
-                $achievements = Achievement::orderBy('order', 'asc')->get();
-                if ($achievements->isNotEmpty()) {
-                    return $achievements;
-                }
-            }
-        } catch (\Exception $e) {
-            // fallback
-        }
-
         return collect([
             [
                 'id' => 1,
@@ -271,17 +260,6 @@ class PortfolioController extends Controller
      */
     private function getCertificatesData()
     {
-        try {
-            if (Schema::hasTable('certificates')) {
-                $certificates = Certificate::orderBy('order', 'asc')->get();
-                if ($certificates->isNotEmpty()) {
-                    return $certificates;
-                }
-            }
-        } catch (\Exception $e) {
-            // fallback if database table not populated
-        }
-
         return [
             [
                 'title' => 'Train a Small Language Model',
