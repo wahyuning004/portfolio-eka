@@ -2,16 +2,3 @@
 /node_modules
 .env
 .git
-public/index.php
-public/.htaccess
-api/
-bootstrap/
-config/
-database/
-routes/
-storage/
-tests/
-artisan
-composer.json
-composer.lock
-vite.config.js
